@@ -1,0 +1,121 @@
+#sedan {
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+  width: 250px;
+  height: 410px;
+
+  display: inline-block;
+  background-color: #f8961e;
+}
+
+#suv {
+  width: 250px;
+  height: 410px;
+
+  display: inline-block;
+  background-color: #028090;
+}
+
+#luxury {
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+  width: 250px;
+  height: 410px;
+
+  background-color: #1a535c;
+}
+
+#container {
+  border: 1px solid black;
+  height: 100vh;
+
+  margin: auto;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.text {
+  /* border: 1px solid black; */
+  width: 200px;
+  height: 250px;
+  margin-left: 37px;
+  margin-top: 40px;
+}
+
+.button1 {
+  margin-left: 37px;
+  margin-top: 28px;
+  border-radius: 40px;
+  padding: 10px 20px;
+  color: #f8961e;
+  background-color: white;
+  border: 0.5px solid white;
+}
+
+.button2 {
+  margin-left: 37px;
+  margin-top: 28px;
+  border-radius: 40px;
+  padding: 10px 20px;
+  color: #028090;
+  background-color: white;
+  border: 0.5px solid white;
+}
+
+.button3 {
+  margin-left: 37px;
+  margin-top: 28px;
+  border-radius: 40px;
+  padding: 10px 20px;
+  color: #1a535c;
+  background-color: white;
+  border: 0.5px solid white;
+}
+
+.button1:hover {
+  border-color: #f8961e;
+  color: #ffc300;
+}
+.button2:hover {
+  border-color: #028090;
+  color: #48bfe3
+}
+.button3:hover {
+  border-color: #1a535c;
+  color: #3dccc7;
+}
+
+p {
+  margin-top: 35px;
+  text-align: start;
+  font-size: 0.9rem;
+  margin-right: 50px;
+  color: #ede7e3;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  letter-spacing: 0.5px;
+}
+
+h1 {
+  margin-top: 25px;
+  margin-right: 10px;
+  color: #ede7e3;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+@media (max-width: 650px) {
+  #container {
+    flex-direction: column;
+    height:1200px;
+    width:20px;
+  }
+
+  #sedan {
+    border-top-right-radius: 8px;
+    border-bottom-left-radius: 0px;
+  }
+
+  #luxury {
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 8px;
+  }
